@@ -68,10 +68,10 @@
       <div class="container">
         <label>Passcode : </label>
         <input
-          id="un"
+          id="pc"
           type="text"
-          placeholder="Enter Username"
-          name="username"
+          placeholder="Enter Passcode"
+          name="passcode"
           required
         />
 
@@ -136,7 +136,7 @@
           event.preventDefault();
         }
         form.addEventListener("submit", handleForm);
-        let username = document.getElementById("un").value;
+        let username = document.getElementById("pc").value;
 
    
           if (caesarShift(username, 420) == "owasp") {
