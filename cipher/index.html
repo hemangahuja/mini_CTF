@@ -66,7 +66,7 @@
     <center><h1>Student Login Form</h1></center>
     <form id="theform">
       <div class="container">
-        <label>Username : </label>
+        <label>Passcode : </label>
         <input
           id="un"
           type="text"
@@ -74,14 +74,7 @@
           name="username"
           required
         />
-        <label>Password : </label>
-        <input
-          id="pw"
-          type="password"
-          placeholder="Enter Password"
-          name="password"
-          required
-        />
+
         <button onclick="validate()">Login</button>
       </div>
     </form>
@@ -144,14 +137,13 @@
         }
         form.addEventListener("submit", handleForm);
         let username = document.getElementById("un").value;
-        let password = document.getElementById("pw").value;
-        if (caesarShift(username, 69) == "hello") {
-          if (caesarShift(password, 420) == "owasp") {
+
+   
+          if (caesarShift(username, 420) == "owasp") {
             var id = generateId(20);
 
             document.getElementById("flag").innerHTML =
               "Congratulations! Your flag is " + id;
-          }
         }
       };
     </script>
